@@ -1,0 +1,8 @@
+<h1>IMAGE GALLERY</h1>
+{% for photo in photos %}
+<!-- {% if photo.image %} -->
+<h3>{{ photo.title }}</h3>
+<p>{{ photo.time_stamp }}</p>
+<img src="{{ photo.image.url }}">
+<!-- {% endif %} -->
+{% endfor %}
